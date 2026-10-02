@@ -181,7 +181,7 @@ function initApiPlayground() {
           booking: {
             id: `BKG-${randId}`,
             created_at: new Date().toISOString(),
-            client: "Логинов Андрей (Тестовый клиент)",
+            client: "lethariess (Тестовый клиент)",
             service: "Аудит архитектуры базы данных",
             time_slot: "2026-10-15 14:00 UTC+5",
             isolation_level: "SERIALIZABLE",
@@ -284,12 +284,12 @@ function initApiPlayground() {
 function initCopyEmail() {
   const copyBtn = document.getElementById('copyEmailBtn');
   const toast = document.getElementById('toastNotification');
-  const email = 'andrey.loginov.dev@gmail.com';
+  const email = 'lethariess@gmail.com';
 
   if (copyBtn && toast) {
     copyBtn.addEventListener('click', () => {
       navigator.clipboard.writeText(email).then(() => {
-        showToast('Адрес andrey.loginov.dev@gmail.com скопирован!');
+        showToast('Адрес lethariess@gmail.com скопирован!');
       }).catch(() => {
         // Fallback
         const temp = document.createElement('textarea');
@@ -324,7 +324,7 @@ function initFeedbackForm() {
       e.preventDefault();
       const name = document.getElementById('senderName').value;
 
-      alertBox.textContent = `✓ Спасибо, ${name}! Ваше сообщение готово к отправке Андрею.`;
+      alertBox.textContent = `✓ Спасибо, ${name}! Ваше сообщение готово к отправке lethariess.`;
       alertBox.style.display = 'block';
 
       form.reset();
